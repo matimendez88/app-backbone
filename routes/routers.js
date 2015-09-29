@@ -5,7 +5,9 @@ var AppRouter = Backbone.Router.extend({
         "person": "person"
     },
     
-    initialize: function(){},
+    initialize: function(){
+        this.index();
+    },
     
     index: function(){        
         var person = new Person();
