@@ -1,0 +1,13 @@
+{
+    "name": "vamoyvamo",
+    "version": "0.0.1",
+    "authors": "Matías M. Méndez <matimendez88@gmail.com>",
+    "description": "vamoyvamo app.",
+    "license": "MIT",
+    "dependencies": {
+        "jquery": "~1.8.3",
+        "underscore": "*",
+        "backbone": "*",
+        "handlebars": "*"
+    }
+}

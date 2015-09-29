@@ -1,0 +1,226 @@
+html,
+body,
+main {
+    height: 100%;
+}
+
+body {
+    background-color: #f7f7f7;
+    font-family: Arial, Helvetica, Sans-serif;
+    margin: 0;
+    min-height: 100%;
+}
+
+header {
+    background: #5cb85c;
+    height: 10%;
+    overflow: hidden;
+    width: 100%;
+}
+
+    header h1 {
+        color: #fff;
+        font-size: 22px;
+        margin: 12px 0 0 10px;
+    }
+
+
+/* Inputs
+---------------------------------------------------------------*/
+
+input[type="number"],
+input[type="text"] {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    height: 35px;
+    font-size: 16px;
+    padding: 0 5px 0 15px;
+
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
+/* Icons
+---------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'vamoyvamo';
+    src: url('../font/vamoyvamo.eot?48356812');
+    src: url('../font/vamoyvamo.eot?48356812#iefix') format('embedded-opentype'),
+        url('../font/vamoyvamo.woff?48356812') format('woff'),
+        url('../font/vamoyvamo.ttf?48356812') format('truetype'),
+        url('../font/vamoyvamo.svg?48356812#vamoyvamo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    font-family: "vamoyvamo";
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: .2em;
+    margin-right: .2em;
+    text-align: center;
+    text-decoration: inherit;
+    text-transform: none;
+    speak: none;
+    width: 1em;
+}
+
+.icon-remove:before {
+    content: '\e800';
+}
+
+
+/* App
+---------------------------------------------------------------*/
+
+.app-container {
+    position: relative;
+    min-height: 90%;
+}
+
+
+/* People Quantity
+---------------------------------------------------------------*/
+
+.people-quantity {
+    /*background-color: #ddd;*/
+    padding: 20px 10px;
+    text-align: center;
+}
+
+    .people-quantity label {
+        background-color: #eee;
+        border: 1px solid #ddd;
+        font-size: 16px;
+        text-align: center;
+        padding: 9px 20px;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .people-quantity input[type="number"] {
+        border-left: none;
+        border-radius: 0 3px 3px 0;
+    }
+
+    .people-quantity .add,
+    .people-quantity .remove {
+        background-color: #5cb85c;
+        border: 1px solid #5cb85c;
+        border-radius: 3px;
+        color: #fff;
+        font-size: 18px;
+        height: 35px;
+        width: 35px;
+    }
+
+    .people-quantity .add {
+        margin-left: 10px;
+    }
+
+    .people-quantity .remove {
+        margin-left: 2px;
+    }
+
+
+/* People
+---------------------------------------------------------------*/
+
+.people-container {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 60px;
+}
+
+    .people-container li {
+        margin: 0;
+    }
+
+
+/* Person
+---------------------------------------------------------------*/
+
+.person {
+    border-top: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px 10px 15px 10px;
+}
+
+    .person input[type="text"] {
+        width: 50%;
+    }
+
+.person-price {
+    display: inline-block;
+    float: right;
+    text-align: right;
+}
+
+    .person-price input[type="number"] {
+        width: 60%;
+    }
+
+    .person .status {
+        display: inline-block;
+        font-size: 14px;
+        margin-top: 10px;
+        width: 60%;
+    }
+
+        .person .status.status-receive {
+            color: green;
+        }
+
+        .person .status.status-pay {
+            color: red;
+        }
+
+        .person .status.status-ok {
+            
+        }
+
+    .person .icon-remove {
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        display: inline-block;
+        float: right;
+        margin-top: 6px;
+        padding: 5px;
+    }
+
+    .person .icon-remove:active {
+        background-color: #ddd;
+    }
+
+
+/* Total Price
+---------------------------------------------------------------*/
+
+.total-price {
+    border-top: 1px solid #ddd;
+    bottom: 0;
+    padding: 20px 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+    .total-price p {
+        margin: 0;
+    }

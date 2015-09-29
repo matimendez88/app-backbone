@@ -1,0 +1,6 @@
+<input type="text" maxlength="20" placeholder="{{name}}" >
+<span class="person-price">
+	$ <input type="number" placeholder="0" {{#compare money 0 operator='!='}}value="{{money}}"{{/compare}} min="0" max="999999" pattern="[0-9]{10}">
+</span>
+<span class="status"></span>
+<span class="icon-remove"></span>
